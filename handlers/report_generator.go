@@ -16,7 +16,7 @@ func GenerateReport() {
 
 	reportContent := fmt.Sprintf("# Daily Report - %s\n\n", time.Now().Format("2006-01-02"))
 	for _, file := range files {
-		if file.IsDir() || file.Name()[0:7] != "webhook" {
+		if file.IsDir() || (file.Name()[0:7] != "webhook" && file.Name()[0:5] != "data_") {
 			continue
 		}
 
