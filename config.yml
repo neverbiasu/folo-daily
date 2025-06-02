@@ -1,0 +1,7 @@
+users:
+  - id: faych
+    channels:
+      - type: email
+        to: 1751162157@qq.com
+        time: "08:00"
+format: "markdown"
